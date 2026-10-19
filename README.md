@@ -2,6 +2,8 @@
 
 一个基于 Vue 3 + Vite 的**极简待办清单**，以中国传统色为设计语言：十套主题配色、流畅的勾选与列表动效、数据全部留在本地浏览器。可当作网页使用，也可打包成 Chrome 扩展的弹窗小工具。
 
+**🔗 在线预览：<https://bugdesigner-hy.github.io/mini-todo/>**（扩展弹窗版：<https://bugdesigner-hy.github.io/mini-todo/popup.html>）
+
 > 掌控时间，掌控人生。
 
 ## ✨ 功能特性
@@ -56,6 +58,14 @@ npm run preview
 2. 打开 `chrome://extensions/`，开启「开发者模式」；
 3. 点击「加载已解压的扩展程序」，选择 `dist/` 目录（`manifest.json` 已随 `public/` 一同复制）。
 
+## 🌐 在线预览与自动部署
+
+线上地址：<https://bugdesigner-hy.github.io/mini-todo/>
+
+部署由 [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) 完成：推送到 `main`（或在 Actions 页手动 `Run workflow`）后，Actions 会执行 `npm ci` → `npm run build`，把 `dist/` 发布到 GitHub Pages。同一份产物同时提供网页版与扩展弹窗版，无需额外配置。
+
+若想换到自己的托管（Vercel / Netlify / 任意静态服务器），直接把 `npm run build` 的 `dist/` 目录上传即可，`base: './'` 的相对路径在子目录下同样可用。
+
 ## 📁 目录结构
 
 ```
@@ -64,6 +74,8 @@ mi-todo/
 ├─ popup.html              # 浏览器扩展弹窗入口（400×600）
 ├─ vite.config.js          # Vite 配置（多入口：index + popup，base 为相对路径）
 ├─ LICENSE                 # MIT 许可证
+├─ .github/workflows/
+│  └─ deploy.yml           # 推送 main 自动构建并部署到 GitHub Pages
 ├─ public/
 │  ├─ manifest.json        # Chrome 扩展清单（MV3）
 │  ├─ favicon.svg
