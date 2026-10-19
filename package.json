@@ -2,7 +2,7 @@
   "name": "mi-todo",
   "private": true,
   "version": "1.0.0",
-  "description": "威力待办 · 基于 Vue 3 + Vite 的极简待办清单，十套中国传统色主题，数据本地存储，可打包为 Chrome 扩展",
+  "description": "极简待办 · 基于 Vue 3 + Vite 的待办清单，十套中国传统色主题，数据本地存储，可打包为 Chrome 扩展",
   "type": "module",
   "license": "MIT",
   "repository": {

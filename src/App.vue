@@ -105,8 +105,8 @@ const clearAll = () => {
       <header class="app-header" :style="{ background: `linear-gradient(135deg, ${currentColor.gradient[0]} 0%, ${currentColor.gradient[1]} 100%)` }">
         <div class="header-content">
           <div class="logo">
-            <span class="logo-icon">威</span>
-            <h1>威力待办</h1>
+            <span class="logo-icon">简</span>
+            <h1>极简待办</h1>
           </div>
           <p class="subtitle">{{ slogan }}</p>
         </div>

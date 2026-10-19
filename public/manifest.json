@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "威力待办",
+  "name": "极简待办",
   "version": "1.0.0",
   "description": "一个简洁、美观、实用的待办应用",
   "action": {
