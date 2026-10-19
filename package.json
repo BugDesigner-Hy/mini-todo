@@ -1,0 +1,24 @@
+{
+  "name": "mi-todo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "威力待办 · 基于 Vue 3 + Vite 的极简待办清单，十套中国传统色主题，数据本地存储，可打包为 Chrome 扩展",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BugDesigner-Hy/mini-todo.git"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.5.32"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.4",
+    "vite": "^5.4.21"
+  }
+}
